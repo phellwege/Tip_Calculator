@@ -10,22 +10,21 @@
 </head>
 <body>
     <h1>
-        SPLI
-        <br/>
-        TTER
+        <img src="../tip-calculator-app-main/images/logo.svg"/>
     </h1>
     <div id="calc_wrap">
         <div id="calc_left">
-            <h2>
+            <h4>
                 Bill
-                <form>
+                <form class="forms">
+                    <img src="../tip-calculator-app-main/images/icon-dollar.svg"/>
                 </form>
-            </h2>
+            </h4>
             
             <div id="buttons_form">
-                <h2>
+                <h4>
                 Select Tip %
-                </h2>
+                </h4>
                 <div>
                     <button class="button" id="5%"> 5% </button>
                     <button class="button" id="10%"> 10% </button>
@@ -34,31 +33,34 @@
                 <div>
                     <button class="button" id="25%"> 25% </button>
                     <button class="button" id="50%"> 50% </button>
-                    <form class="button" id="custom"> Custom </form>
+                    <button class="button" id="custom"><form> Custom </form></button>
                 </div>
             </div>
-            <h2>
+            <h4>
                 Number of People
-            </h2>
-            <form>
-
+            <form class="forms">
+                <img src="../tip-calculator-app-main/images/icon-person.svg"/>
             </form>
+        </h4>
         </div>
         <div id="calc_right">
             <div>
-            <h2>
+            <div>
+            <h4>
                 Tip Amount
                 <br/>
                 <span id="small_print">/ person</span>
-            </h2>
+            </h4>
             </div>
+            <br/>
             <div>
-            <h2>
+            <h4>
                 Total
                 <br/>
                 <span id="small_print">/ person</span>
-            </h2>
+            </h4>
             </div>
+        </div>
             <button id="reset_button">Reset</button>
 
         </div>
