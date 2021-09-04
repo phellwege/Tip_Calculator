@@ -1,0 +1,109 @@
+@import url(https://fonts.google.com/specimen/Space+Mono);
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono", sans-serif, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
+body h1 {
+    text-align: center;
+}
+#calc_wrap {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 1em;
+    width: 55vw;
+    height: 55vh;
+    margin: 2.5%;
+    padding: 2.5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#calc_left {
+    background-color: white;
+    width: 45%;
+}
+#calc_left h2{
+    color: hsl(186, 14%, 43%);
+}
+#calc_right {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 1em;
+    padding: 10px;
+    color: hsl(185, 41%, 84%);
+    width: 45%;
+}
+#small_print {
+    font-size: .5em;
+    font-weight: 400;
+}
+#reset_button {
+    width: 90%;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border-radius: .8em;
+}
+#buttons_form {
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+}
+/* #buttons_form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} */
+
+@media only screen and (max-width: 375px) {
+    #calc_wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong cyan: hsl(172, 67%, 45%)
+
+### Neutral
+
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Dark grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (form inputs): 24px
+
+### Font
+
+- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+- Weights: 400, 500, 700 */
