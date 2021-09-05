@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Style.css">
-    <link rel="logic" href="./Logic.js">
+    <link rel="stylesheet" type="text/css" href="./Style.css">
+    <script src="./Logic.js"></script>
     <link rel="icon" type="image/png" href="./images/favicon-32x32.png"/>
     <!-- <link rel="icon" type="image/png" href="https://example.com/favicon.png"/> -->
     <title>Document</title>
@@ -20,6 +20,7 @@
                 Bill
                 <form class="forms">
                     <img src="./images/icon-dollar.svg"/>
+                    <input id="billMe" type="text" class="form-control" placeholder="0" name="0"/>
                 </form>
             </h4>
             
@@ -28,7 +29,7 @@
                 Select Tip %
                 </h4>
                 <div>
-                    <button class="button" id="5%"> 5% </button>
+                    <button class="button" id="5%" onclick="document.getElementById('tipPercent').innerHTML = CalcTip()"> 5% </button>
                     <button class="button" id="10%"> 10% </button>
                     <button class="button" id="15%"> 15% </button>
                 </div>
@@ -42,6 +43,7 @@
                 Number of People
             <form class="forms">
                 <img src="./images/icon-person.svg"/>
+                <input type="text" class="form-control" placeholder="0" name="0"/>
             </form>
         </h4>
         </div>
@@ -53,7 +55,7 @@
                 <br/>
                 <span id="small_print">/ person</span>
             </h4>
-
+                <output type="text" class="form-control" placeholder="$0.00">
             </div>
             <br/>
             <div>
@@ -62,11 +64,12 @@
                 <br/>
                 <span id="small_print">/ person</span>
             </h4>
-
+                <output type="text" class="form-control" placeholder="$0.00">
             </div>
         </div>
-            <button id="reset_button">Reset</button>
-
+            <div id="reset_div">
+                <button id="reset_button">Reset</button>
+            </div>
         </div>
     </div>
 
