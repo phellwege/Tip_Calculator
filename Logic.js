@@ -1,8 +1,9 @@
+
 function CalcTip() {
     var billAmt = document.getElementById("billMe").value;
-    var numOfPeople = document.getElementById("").value;
+    var numOfPeople = document.getElementById("numberOfPeople").value;
     var tipPercent = document.getElementById("").value;
-    var total = document.getElementById("").value;
+    var total = document.getElementById("total").value;
 
     if (billAmt === "" || numOfPeople < 1) {
         alert("Can't be zero");
@@ -15,7 +16,6 @@ function CalcTip() {
 }else {
     document.getElementById("each").style.display = "block";
 }
-
 
     var total = (billAmt * tipPercent) / numOfPeople;
     total = Math.round(total * 100) / 100;

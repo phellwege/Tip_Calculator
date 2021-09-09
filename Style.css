@@ -20,7 +20,7 @@ body h1 {
     display: flex;
     flex-direction: row;
     border-radius: 1em;
-    width: 55vw;
+    width: 60vw;
     height: 55vh;
     margin: 2.5%;
     padding: 2.5%;
@@ -98,7 +98,10 @@ body h1 {
     font-size: 24px;
 }
 #custom:hover {
-    color: hsl(183, 100%, 15%);;
+    color: hsl(183, 100%, 15%);
+}
+#custom:active {
+    color: hsl(183, 100%, 15%);
 }
 .forms {
     background-color: hsl(189, 41%, 97%);
@@ -122,10 +125,15 @@ body h1 {
     flex-direction: column;
     justify-content: space-evenly;
 }
-output {
+#calc_right_output {
     font-size: 48px;
     color:hsl(172, 67%, 45%);
+    font-weight: 500;
 }
+input {
+    color: hsl(183, 100%, 15%);
+}
+
 /* #buttons_form {
     display: flex;
     justify-content: space-evenly;
