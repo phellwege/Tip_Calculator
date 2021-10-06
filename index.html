@@ -13,7 +13,7 @@
     <!-- <link rel="icon" type="image/png" href="https://example.com/favicon.png"/> -->
     <title>Document</title>
 </head>
-<body>
+<body onChange="CalcTip(this.value)">
     <h1>
         <img src="./images/logo.svg"/>
     </h1>
@@ -21,7 +21,7 @@
         <div id="calc_left">
             <h4>
                 Bill
-                <input class="forms" id="billMe" type="number" class="form-control" placeholder="0" name="0" onchange="CalcTip(this.value)"/>
+                <input class="forms" id="billMe" type="number" class="form-control" placeholder="0" name="0"/>
             </h4>
             
             <div id="buttons_form">
@@ -29,14 +29,14 @@
                 Select Tip %
                 </h4>
                 <div>
-                    <button class="button" id="five" value="05" onclick="CalcTip(this.value)"> 5% </button>
-                    <button class="button" id="ten" value="10" onclick="CalcTip(this.value)"> 10% </button>
-                    <button class="button" id="fifteen" value="15" onclick="CalcTip(this.value)"> 15% </button>
+                    <button class="button" id="five" value=".05"> 5% </button>
+                    <button class="button" id="ten" value=".10"> 10% </button>
+                    <button class="button" id="fifteen" value=".15"> 15% </button>
                 </div>
                 <div>
-                    <button class="button" id="twentyFive" value="25" onclick="CalcTip(this.value)"> 25% </button>
-                    <button class="button" id="fifty" value="50" onclick="CalcTip(this.value)"> 50% </button>
-                    <input id="custom" type="number" class="form-control" placeholder="Custom" min="0" max="100" class="button" id="custom" onchange="CalcTip(this.value)">
+                    <button class="button" id="twentyFive" value=".25"> 25% </button>
+                    <button class="button" id="fifty" value=".50"> 50% </button>
+                    <input id="custom" type="number" class="form-control" placeholder="Custom" min="0" max="1" class="button" id="custom">
                 </input>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                 </h4>
                 </div>
                 <div>
-                    <p id="calc_right_output" class="form-control" name="TipAmt">
+                    <p id="calc_right_output" name="TipAmt">
                         $<span id="tip">0.00</span>
                     </p>
                 </div>
@@ -72,9 +72,13 @@
                     
                 </div>
                 <div>
-                    <p id="calc_right_output" class="form-control">
-                        $<span id="totalTip">0.00</span>
+                    <p id="calc_right_output">
+                        $<span id="total">0.00</span>
                     </p>
+                    <script>    
+                        console.log(tip)
+                        console.log(total);
+                    </script>
                 </div>
             </div>
             <div id="reset_div">
@@ -82,6 +86,6 @@
             </div>
         </div>
     </div>
-
+        
 </body>
 </html>

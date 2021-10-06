@@ -4,19 +4,28 @@ function CalcTip(billAmt, tipPercent, numOfPeople) {
     var numOfPeople = document.getElementById("numberOfPeople").value;
     var tipPercent = document.getElementById("buttons_form").value;
 
-    var total = document.getElementById("total");
-        
+        console.log(billAmt)
+
+        console.log(numOfPeople)
+
+        console.log(tipPercent)
+
     if (billAmt === "" || numOfPeople < 1) {
         alert("Can't be zero");
         return;
     }
-    if (numOfPeople === "" || numOfPeople <=1){
-        numberOfPeople = 1;
-    }
-    var total = (billAmt * tipPercent) / numOfPeople;
-    total = Math.round(total * 100) / 100;
-    total = total.toFixed(2);
 
-    document.getElementById("totalTip").style.display = "block";
-    document.getElementById("tip").innerHTML = total;
+    var Total = (billAmt * tipPercent) / numOfPeople; 
+    Total = Math.round(Total) + (billAmt / numOfPeople);
+    Total = Total.toFixed(2);
+    Total = Total;
+    
+    console.log(billAmt* tipPercent)
+
+    var Tip = (billAmt * tipPercent) / numOfPeople;
+        Tip = Math.round(Tip);
+        Tip = Tip.toFixed(2);
+
+    document.getElementById("tip").innerHTML = Tip;
+    document.getElementById("total").innerHTML = Total;
 }
