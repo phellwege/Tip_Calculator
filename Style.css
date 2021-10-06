@@ -76,7 +76,7 @@ body h1 {
 .button {
     background-color: hsl(183, 100%, 15%);
     color: hsl(189, 41%, 97%);
-    width: 30%;
+    width: 28%;
     padding: 1.5%;
     font-size: 24px;
     margin: 1%;
@@ -98,11 +98,13 @@ body h1 {
     background-repeat: no-repeat;
 }
 #custom {
-    width: 30%;
+    width: 28%;
     margin: 1%;
     background-color: hsl(189, 41%, 97%);
     color: hsl(184, 14%, 56%);
     font-size: 24px;
+    border-radius: .25em;
+    text-align: center;
 }
 #custom:hover {
     color: hsl(183, 100%, 15%);
