@@ -1,8 +1,13 @@
+function getId(btn){
+        const DeezeNuts = (btn.id)
+}
 
 function CalcTip(billAmt, tipPercent, numOfPeople) {
     var billAmt = document.getElementById("billMe").value;
     var numOfPeople = document.getElementById("numberOfPeople").value;
-    var tipPercent = document.getElementById("buttons_form").value;
+    var tipPercent = document.getElementById(`${DeezeNuts}``).value;
+
+    
 
         console.log(billAmt)
 
