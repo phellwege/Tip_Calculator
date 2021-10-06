@@ -117,20 +117,19 @@ body h1 {
     height: 30px;
     align-self: center;
     border-radius: .25em;
-    padding: 1.5%;
+    padding: 2%;
     margin: 1.5% 0%;
     display: flex;
     justify-content: space-between;
+    text-align: right;
 }
 .forms img {
     align-self: center;
 }
 #right_top {
-    height: 45%;
     margin: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 #calc_right_output {
     font-size: 48px;
@@ -170,6 +169,8 @@ input {
         height: auto;
         padding: 1%;
         margin: 10px;
+        display: flex;
+        flex-direction: column;
     }
 }
 /* # Front-end Style Guide

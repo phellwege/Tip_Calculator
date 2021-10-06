@@ -19,7 +19,6 @@
             <h4>
                 Bill
                 <input class="forms" id="billMe" type="text" class="form-control" placeholder="0" name="0">
-                    <img src="./images/icon-dollar.svg"/>
                 </input>
             </h4>
             
@@ -52,24 +51,34 @@
         </div>
         <div id="calc_right">
             <div id="right_top">
-            <div>
-            <h4>
-                Tip Amount
-                <br/>
-                <span id="small_print">/ person</span>
-            </h4>
-                <output id="calc_right_output" type="text" class="form-control" name="TipAmt" placeholder="$0.00" z-index="1">
+                <div>
+                <h4>
+                    Tip Amount
+                    <br/>
+                    <span id="small_print">/ person</span>
+                </h4>
+                </div>
+                <div>
+                    <p id="calc_right_output" class="form-control" name="TipAmt" z-index="1">
+                        $0.00
+                    </p>
+                </div>
             </div>
-            <br/>
-            <div>
-            <h4>
-                Total
-                <br/>
-                <span id="small_print">/ person</span>
-            </h4>
-                <output id="calc_right_output" type="text" class="form-control" name="total" placeholder="$0.00">
+            <div id="right_top">
+                <div>
+                <h4>
+                    Total
+                    <br/>
+                    <span id="small_print">/ person</span>
+                </h4>
+                    
+                </div>
+                <div>
+                    <p id="calc_right_output" class="form-control">
+                        $0.00
+                    </p>
+                </div>
             </div>
-        </div>
             <div id="reset_div">
                 <button id="reset_button">Reset</button>
             </div>
