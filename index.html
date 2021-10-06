@@ -30,15 +30,14 @@
                 Select Tip %
                 </h4>
                 <div>
-                    <button class="button" id="five" onclick="document.getElementById('tipPercent').innerHTML = CalcTip()"> 5% </button>
-                    <button class="button" id="ten"> 10% </button>
-                    <button class="button" id="fifteen"> 15% </button>
+                    <button class="button" id="five" value=".05" onclick="CalcTip().tipPercent"> 5% </button>
+                    <button class="button" id="ten" value=".1" onclick="CalcTip().tipPercent"> 10% </button>
+                    <button class="button" id="fifteen" value=".15" onclick="CalcTip().tipPercent"> 15% </button>
                 </div>
                 <div>
-                    <button class="button" id="twentyFive"> 25% </button>
-                    <button class="button" id="fifty"> 50% </button>
-                    <input id="custom" type="text" class="form-control" placeholder="Custom" class="button" id="custom">
-                        
+                    <button class="button" id="twentyFive" value=".25" onclick="CalcTip().tipPercent"> 25% </button>
+                    <button class="button" id="fifty" value=".5" onclick="CalcTip().tipPercent"> 50% </button>
+                    <input id="custom" type="text" class="form-control" placeholder="Custom" class="button" id="custom" onclick="CalcTip().tipPercent">
                 </input>
                 </div>
             </div>
@@ -46,7 +45,6 @@
                 Number of People
             <input class="forms" input id="numberOfPeople" type="text" class="form-control" placeholder="0" name="0">
                 <img src="./images/icon-person.svg"/>
-
             </input>
         </h4>
         </div>
@@ -61,7 +59,7 @@
                 </div>
                 <div>
                     <p id="calc_right_output" class="form-control" name="TipAmt" z-index="1">
-                        $0.00
+                        $<span>0.00</span>
                     </p>
                 </div>
             </div>
@@ -76,7 +74,7 @@
                 </div>
                 <div>
                     <p id="calc_right_output" class="form-control">
-                        $0.00
+                        $<span>0.00</span>
                     </p>
                 </div>
             </div>
