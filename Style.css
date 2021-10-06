@@ -61,6 +61,7 @@ body h1 {
     color: hsl(183, 100%, 15%);
     border-radius: .8em;
     border: none;
+    cursor: pointer;
 }
 #reset_button:hover {
     background-color: hsl(185, 41%, 84%);
@@ -81,6 +82,7 @@ body h1 {
     margin: 1%;
     border-radius: .25em;
     border: none;
+    cursor: pointer;
 }
 .button:hover {
     background-color: hsl(185, 41%, 84%);
