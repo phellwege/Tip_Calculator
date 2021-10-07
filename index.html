@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-    <!-- <link rel="icon" type="image/png" href="https://example.com/favicon.png"/> -->
     <title>Calculator</title>
 </head>
 <body onChange="CalcTip(this.value)">
@@ -36,7 +35,7 @@
                 <div>
                     <button class="button" id="twentyFive" value=".25" onClick="getId(this)"> 25% </button>
                     <button class="button" id="fifty" value=".50" onClick="getId(this)"> 50% </button>
-                    <input id="custom" type="number" class="form-control" placeholder="Custom" min="0" max="1" class="button" id="custom" onClick="getId(this)">
+                    <input id="custom" type="number" class="form-control" placeholder="Custom" min="1" max="100" class="button" id="custom" onClick="getId(this)">
                 </input>
                 </div>
             </div>
@@ -82,7 +81,7 @@
                 </div>
             </div>
             <div id="reset_div">
-                <button id="reset_button">Reset</button>
+                <button id="reset_button" onClick="Reset()">Reset</button>
             </div>
         </div>
     </div>
