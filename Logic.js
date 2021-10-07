@@ -8,6 +8,7 @@ function CalcTip(billAmt, tipPercent, numOfPeople) {
     Total = Total;
     var Tip = (billAmt * tipPercent) / numOfPeople;
         Tip = Math.round(Tip);
+        Tip=Tip;
     document.getElementById("tip").innerHTML = Tip.toFixed(2);
     document.getElementById("total").innerHTML = Total.toFixed(2);
 }    
@@ -18,9 +19,6 @@ function CalcTip(billAmt, tipPercent, numOfPeople) {
         var tipPercent = document.getElementById(DeezeNuts).value;
         CalcTip(billAmt, tipPercent, numOfPeople)
     }
-    function Reset() {
-        var x = document.getElementById("billMe")
-            x = "";
-        var y = document.getElementById("numOfPeople")
-            y="";
-    }
+    // function Reset() {
+    //     document.getElementsByClassName("forms").reset();
+    // }
