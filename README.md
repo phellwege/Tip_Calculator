@@ -74,8 +74,24 @@ To see how you can add code snippets, see below:
             </div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.button {
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    width: 28%;
+    padding: 1.5%;
+    font-size: 24px;
+    margin: 1%;
+    border-radius: .25em;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+.button:active {
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
 }
 ```
 ```js
