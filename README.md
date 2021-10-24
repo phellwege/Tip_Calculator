@@ -52,7 +52,26 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<h4>
+  Bill
+  <input class="forms" id="billMe" type="number" class="form-control" placeholder="0" name="0"/>
+</h4>
+<div id="buttons_form">
+                <h4>
+                Select Tip %
+                </h4>
+                <div>
+                    <button class="button" id="five" value=".05" onClick="getId(this)"> 5% </button>
+                    <button class="button" id="ten" value=".10" onClick="getId(this)"> 10% </button>
+                    <button class="button" id="fifteen" value=".15" onClick="getId(this)"> 15% </button>
+                </div>
+                <div>
+                    <button class="button" id="twentyFive" value=".25" onClick="getId(this)"> 25% </button>
+                    <button class="button" id="fifty" value=".50" onClick="getId(this)"> 50% </button>
+                    <input id="custom" type="number" class="form-control" placeholder="Custom" min="1" max="100" class="button" id="custom" onClick="getId(this)">
+                </input>
+                </div>
+            </div>
 ```
 ```css
 .proud-of-this-css {
