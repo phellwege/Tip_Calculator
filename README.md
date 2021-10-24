@@ -60,9 +60,13 @@ To see how you can add code snippets, see below:
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+function getId(btn) {
+        const DeezeNuts = (btn.id)
+        var billAmt = document.getElementById("billMe").value;
+        var numOfPeople = document.getElementById("numberOfPeople").value;
+        var tipPercent = document.getElementById(DeezeNuts).value;
+        CalcTip(billAmt, tipPercent, numOfPeople)
+    }
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
